@@ -20,7 +20,7 @@ module Pathfinder
       apply_greedy_paths!
       eliminate_redundant_paths
       remove_root_path
-      return paths
+      paths.uniq
     end
 
     private
